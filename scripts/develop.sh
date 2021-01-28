@@ -17,9 +17,9 @@ fi
 
 resource_dir=$(cd $(dirname $0)/.. && pwd)
 cd "${resource_dir}"
-docker build -t springio/java-cache-resource .
+docker build -t sovanyio/java-cache-resource .
 
 docker run -v "${resource_dir}:/java-cache-resource" \
     -it \
     -w /java-cache-resource \
-    springio/java-cache-resource /bin/bash
+    sovanyio/java-cache-resource /bin/bash

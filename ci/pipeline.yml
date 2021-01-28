@@ -2,11 +2,11 @@ resources:
 - name: java-cache-resource
   type: git
   source:
-    uri: https://github.com/spring-io/java-cache-resource.git
+    uri: https://github.com/sovanyio/java-cache-resource.git
 - name: java-cache-resource-image
   type: docker-image
   source:
-    repository: springio/java-cache-resource
+    repository: sovanyio/java-cache-resource
     username: {{java-cache-resource-image-username}}
     password: {{java-cache-resource-image-password}}
 jobs:

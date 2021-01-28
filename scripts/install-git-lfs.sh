@@ -2,7 +2,7 @@
 set -eu
 
 _main() {
-  gitversion=1.5.4
+  gitversion=2.13.2
   local tmpdir
   tmpdir="$(mktemp -d git_lfs_install.XXXXXX)"
 

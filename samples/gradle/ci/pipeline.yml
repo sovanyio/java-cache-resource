@@ -1,7 +1,7 @@
 resource_types:
   - name: java-cache-resource
     type: docker-image
-    source: {repository: springio/java-cache-resource, tag: latest}
+    source: {repository: sovanyio/java-cache-resource, tag: latest}
 resources:
   - name: git-repo
     type: git
@@ -18,7 +18,7 @@ resources:
         - source: ~/.gradle
           destination: gradle
       commands:
-        - "(cd ./samples/gradle && ./gradlew --project-cache-dir ~/.gradle/project build)"
+        - "(cd ./samples/gradle && gradle --project-cache-dir ~/.gradle/project build)"
       cleanup:
         - ".*SNAPSHOT"
 jobs:

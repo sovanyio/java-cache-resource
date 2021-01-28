@@ -16,7 +16,7 @@ The code is organized as follows:
 To build the docker image run the following command from the root checkout:
 
 ----
-$ docker build -t springio/java-cache-resource .
+$ docker build -t sovanyio/java-cache-resource .
 ----
 
 === Developing locally

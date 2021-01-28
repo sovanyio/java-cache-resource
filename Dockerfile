@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 
-RUN apk add --no-cache curl tar bash git jq sed grep
+RUN apk add --no-cache curl tar bash git jq sed grep maven gradle
 
 ADD scripts/install-git-lfs.sh install-git-lfs.sh
 RUN ./install-git-lfs.sh
